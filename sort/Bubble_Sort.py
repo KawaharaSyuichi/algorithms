@@ -11,9 +11,7 @@ def bubblesort(A, N):
                 break
 
             if A[j] < A[j - 1]:
-                temp = A[j]
-                A[j] = A[j - 1]
-                A[j - 1] = temp
+                A[j], A[j-1] = A[j-1], A[j]
                 flag = True
                 sw += 1
 
