@@ -5,7 +5,11 @@ s2 = str()
 
 
 def lcs(X, Y):
-    c = [[0] * (N + 1)] * (N + 1)
+    c = []
+    for i in range(N + 1):
+        c.append([])
+        for _ in range(N + 1):
+            c[i].append(0)
     m = len(X)
     n = len(Y)
     maxl = 0
